@@ -1,5 +1,5 @@
 ## Flask Helloworld
-This is a sample service for Giant Swarm which is used in the Swarm Inception project as an example service.
+This is a sample service for Giant Swarm which is used in the [Swarm Inception project](https://github.com/giantswarm/swarm-inception) as an example service.
 
 ### Prerequisites
 At a minimum you will need the following to launch this guide's services:
