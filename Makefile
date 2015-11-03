@@ -4,7 +4,7 @@ TOKEN = $(shell cat ~/.swarm/token)
 ENV = $(shell swarm env)
 
 # service info
-SERVICE = sample
+SERVICE = swarm-flask-helloworld
 REGISTRY = docker.io
 REGISTRY_USERNAME = kordinator
 IMAGE = $(REGISTRY)/$(REGISTRY_USERNAME)/$(SERVICE)
