@@ -1,0 +1,18 @@
+{
+  "definition": {
+    "name": "sample",
+    "components": {
+      "flask": {
+        "image": "registry.giantswarm.io/kord/sample",
+        "ports": [
+          "5000/tcp"
+        ],
+        "domains": {
+          "5000/tcp": [
+            "sample-kord.gigantic.io"
+          ]
+        }
+      }
+    }
+  }
+}
