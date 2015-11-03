@@ -5,9 +5,9 @@ ENV = $(shell swarm env)
 
 # service info
 SERVICE = sample
-REGISTRY = registry.hub.docker.com
-REGISTRY_USERNAME = kordless
-IMAGE = $(REGISTRY)/$(USERNAME)/$(SERVICE)
+REGISTRY = docker.io
+REGISTRY_USERNAME = kordinator
+IMAGE = $(REGISTRY)/$(REGISTRY_USERNAME)/$(SERVICE)
 DOMAIN = sample-$(USERNAME).gigantic.io
 PORT = 5000
 DEV_DOMAIN = $(shell boot2docker ip):$(PORT)
