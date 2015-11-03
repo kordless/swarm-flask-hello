@@ -13,7 +13,7 @@ You will need to fork the repo into your account to start. Navigate to the top o
 
 Select a target organization to fork the repository into:
 
-![](https://github.com/giantswarm/swarm-flask-helloworld/assets/fork.png)
+![](https://raw.githubusercontent.com/giantswarm/swarm-flask-helloworld/master/assets/fork.png)
 
 ### Clone the Repo
 Once you've forked the repo, you'll want to clone the repository. Here's an example of cloning the repo:
