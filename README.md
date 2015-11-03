@@ -24,6 +24,12 @@ https://github.com/<username>/swarm-flask-helloworld.git
 
 You'll need to replace the `<username>` bit with your Github username.
 
+Change into the directory before continuing:
+
+```
+$ cd swarm-flask-helloworld
+```
+
 ### Build the Definition File
 Next, you'll need to build the `swarm-api.json` file, which will be used by the Swarm Inception service to deploy or update this service automatically after a Docker build has been completed.
 
