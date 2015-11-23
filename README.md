@@ -9,7 +9,7 @@ At a minimum you will need the following to launch this guide's services:
 * A Docker Hub [account](https://hub.docker.com).
 
 ### Fork the Repo
-You will need to fork the repo into your account to start. Navigate to the top of this page and click on the *Fork* button at the top right.
+You will need to fork the repo into your account to start. Navigate to the top of this page and click on the `Fork` button at the top right.
 
 Select a target organization to fork the repository into:
 
@@ -19,7 +19,7 @@ Select a target organization to fork the repository into:
 Once you've forked the repo, you'll want to clone the repository. Here's an example of cloning the repo:
 
 ```
-https://github.com/<username>/swarm-flask-helloworld.git
+git clone https://github.com/<username>/swarm-flask-helloworld.git
 ```
 
 You'll need to replace the `<username>` bit with your Github username.
@@ -74,17 +74,19 @@ To https://github.com/bant/swarm-flask-helloworld.git
    1a441e1..70ec94f  master -> master
 ```
 
-Once that is complete, you can head back over to the Swarm Inception project and keep going!
+Once that is complete, you can head back over to the [Swarm Inception project](https://github.com/giantswarm/swarm-inception) and keep going!
+
+**Note:** You may want to inspect the `swarm-api.json` file to confirm the image path is set to a `docker.io` registry image!
 
 ### Deploy
-If you would like to deploy this project to Giant Swarm, you'll need to edit the `Makefile` and add your Docker Hub username:
+If you would like to deploy this project to Giant Swarm, you will need to edit the `Makefile` and update your Docker Hub username:
 
 ```
 REGISTRY = docker.io
 REGISTRY_USERNAME = <username>
 ```
 
-**Note: Keep in mind that you need to push this to Docker Hub to have it work properly with the Swarm Inception project.**
+**Note:** Keep in mind that you need to have the `REGISTRY` set to Docker Hub's `docker.io` to have it work properly with the Swarm Inception project.**
 
 Once you've this information, you can do a deployment:
 
