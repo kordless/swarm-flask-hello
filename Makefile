@@ -4,7 +4,7 @@ TOKEN = $(shell cat ~/.swarm/token)
 ENV = $(shell swarm env)
 
 # service info
-SERVICE = sample
+SERVICE = swarm-flask-hello
 REGISTRY = docker.io
 REGISTRY_USERNAME = kordinator
 IMAGE = $(REGISTRY)/$(REGISTRY_USERNAME)/$(SERVICE)
@@ -29,7 +29,7 @@ run: build
 	@echo "##########################################################"
 	@echo "View the service at: http://$(DEV_DOMAIN)"
 	@echo "##########################################################"
-	
+
 	docker run --name=sample --rm -ti \
 		-p $(PORT):$(PORT) \
 		$(IMAGE)
